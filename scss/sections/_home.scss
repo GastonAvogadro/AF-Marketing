@@ -1,0 +1,36 @@
+.homeContainer {
+    @include d-flex-space;
+    @include d-flex-column;
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.homeTitle {
+    width: 90%;
+    @include d-flex-center;
+    h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        white-space: pre-line;
+    }
+}
+
+.homeText {
+    margin: 2.5rem 0;
+    width: 92%;
+    p {
+        line-height: 2.2rem;
+        font-size: 1.25rem;
+    }
+}
+
+.homeImg{
+    margin-top: 2.5rem;
+    img{
+        width: 257px;
+        height: 251px;
+    }
+}
+
+
+

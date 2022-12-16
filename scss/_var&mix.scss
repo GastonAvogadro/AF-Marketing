@@ -1,0 +1,57 @@
+// COLORS
+
+$black-primary: #2d2d2d;
+$white-primary: #fbfbfb;
+
+// FLEXBOX
+
+@mixin d-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin d-flex-space {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// BUTTONS
+
+.btn-violet {
+    cursor: pointer;
+    padding: 16px 62px;
+    width: 214px;
+    height: 62px;
+    background: #9747ff;
+    border-radius: 20px;
+    @include d-flex-center;
+    p {
+        font-weight: 500;
+        font-size: 1.25rem;
+        color: $white-primary;
+    }
+}
+
+.btn-blue {
+    @extend .btn-violet;
+    width: 210px;
+    background: #516eff;
+}
+
+.btn-blue-mobile {
+    @extend .btn-blue;
+    width: 111px;
+    height: 48px;
+}

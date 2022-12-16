@@ -1,0 +1,37 @@
+// RESET
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+// FONT FAMILY
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: $black-primary;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'CenturyGhoticB';
+    font-weight: 400;
+    color: $black-primary;
+}
