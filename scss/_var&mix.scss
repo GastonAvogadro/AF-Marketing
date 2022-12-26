@@ -27,31 +27,3 @@ $white-primary: #fbfbfb;
     justify-content: center;
 }
 
-// BUTTONS
-
-.btn-violet {
-    cursor: pointer;
-    padding: 16px 62px;
-    width: 214px;
-    height: 62px;
-    background: #9747ff;
-    border-radius: 20px;
-    @include d-flex-center;
-    p {
-        font-weight: 500;
-        font-size: 1.25rem;
-        color: $white-primary;
-    }
-}
-
-.btn-blue {
-    @extend .btn-violet;
-    width: 210px;
-    background: #516eff;
-}
-
-.btn-blue-mobile {
-    @extend .btn-blue;
-    width: 111px;
-    height: 48px;
-}

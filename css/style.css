@@ -1,7 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 @font-face {
   font-family: CenturyGhoticB;
   src: url(../fonts/CenturyGothicB.TTF); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul,
+ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: none; }
+
+p, a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #2d2d2d; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'CenturyGhoticB';
+  font-weight: 400;
+  color: #2d2d2d; }
 
 .btn-violet, .btn-blue, .btn-blue-mobile {
   cursor: pointer;
@@ -24,35 +54,13 @@
 
 .btn-blue-mobile {
   width: 111px;
-  height: 48px; }
-
-* {
-  margin: 0;
+  height: 48px;
   padding: 0;
-  box-sizing: border-box; }
-
-ul,
-ol {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
-
-button {
-  border: none; }
-
-p {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  color: #2d2d2d; }
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'CenturyGhoticB';
-  font-weight: 400;
-  color: #2d2d2d; }
+  font-family: 'Poppins'; }
+  .btn-blue-mobile p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9rem; }
 
 .headerContainer {
   box-shadow: 0 4px 2px -2px #cacaca;
@@ -157,7 +165,7 @@ h4 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 5rem 0; }
+  margin-top: 5rem; }
 
 .aboutTitle h2 {
   display: flex;
@@ -178,3 +186,315 @@ h4 {
   margin: 0.5rem 0; }
   .aboutImg img {
     width: 240px; }
+
+.aboutCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 3rem;
+  background: white;
+  background: linear-gradient(180deg, white 75%, #afb9d9 85%);
+  width: 100%; }
+
+.aboutCards-title {
+  width: 70%; }
+  .aboutCards-title h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    text-align: center; }
+
+.about-card {
+  width: 230px;
+  height: 260px;
+  background: #fbfbfb;
+  box-shadow: 0px 16px 32px rgba(45, 45, 45, 0.25);
+  border-radius: 24px; }
+  .about-card img {
+    width: 80px;
+    position: relative;
+    top: -15%; }
+  .about-card div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    bottom: 0.6rem; }
+    .about-card div h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      width: 68%;
+      font-size: 1.25rem;
+      line-height: 1.8rem; }
+
+.aboutContact, .servicesCards .servicesContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; }
+  .aboutContact .aboutContact-title, .servicesCards .servicesContact .aboutContact-title, .servicesCards .servicesContact .servicesContact-title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: #fbfbfb;
+    margin-bottom: 1.6rem; }
+  .aboutContact button, .servicesCards .servicesContact button {
+    width: 223px;
+    height: 58px;
+    background: #afb9d9;
+    background: transparent;
+    border: 3px solid #f5f5f5;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    cursor: pointer; }
+    .aboutContact button p, .servicesCards .servicesContact button p {
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.8rem;
+      color: #fbfbfb; }
+
+.servicesContainer {
+  margin-top: 1rem; }
+
+.servicesTitle {
+  margin-bottom: 1.5rem; }
+  .servicesTitle h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem; }
+
+.servicesCards {
+  background: white;
+  background: linear-gradient(180deg, white 87%, #cfb664 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; }
+  .servicesCards .servicesCards1-title, .servicesCards .servicesCards2-title {
+    width: 75%;
+    margin-bottom: 1rem; }
+    .servicesCards .servicesCards1-title h3, .servicesCards .servicesCards2-title h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      line-height: 2.3rem;
+      text-align: center; }
+  .servicesCards .serviceCard1, .servicesCards .serviceCard2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+    width: 278px;
+    height: 532px;
+    background: #fbfbfb;
+    box-shadow: 0px 16px 32px rgba(45, 45, 45, 0.25);
+    border-radius: 24px; }
+    .servicesCards .serviceCard1 h4, .servicesCards .serviceCard2 h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 2.3rem;
+      text-align: center; }
+    .servicesCards .serviceCard1 ul, .servicesCards .serviceCard2 ul {
+      width: 80%; }
+      .servicesCards .serviceCard1 ul li, .servicesCards .serviceCard2 ul li {
+        margin: 1.3rem 0;
+        display: flex; }
+        .servicesCards .serviceCard1 ul li span, .servicesCards .serviceCard2 ul li span {
+          position: relative;
+          top: 12px;
+          right: 11px;
+          height: 4px;
+          width: 4px;
+          min-width: 4px;
+          background-color: #2d2d2d;
+          border-radius: 50%;
+          display: inline-block; }
+        .servicesCards .serviceCard1 ul li p, .servicesCards .serviceCard2 ul li p {
+          font-size: 1.1rem; }
+    .servicesCards .serviceCard1 button, .servicesCards .serviceCard2 button {
+      width: 204px;
+      height: 55px;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .servicesCards .serviceCard1 button p, .servicesCards .serviceCard2 button p {
+        font-weight: 500;
+        font-size: 1rem; }
+  .servicesCards .servicesCards2-title {
+    margin: 0.6rem 0 2rem 0; }
+  .servicesCards .serviceCard2 {
+    justify-content: space-evenly; }
+    .servicesCards .serviceCard2 div {
+      display: flex;
+      flex-direction: column;
+      width: 95%; }
+      .servicesCards .serviceCard2 div p {
+        text-align: start;
+        margin-top: 1rem; }
+    .servicesCards .serviceCard2 p {
+      font-size: 1.1rem;
+      line-height: 1.6rem; }
+  .servicesCards .servicesContact {
+    margin-top: 0.8rem; }
+    .servicesCards .servicesContact .servicesContact-title {
+      font-size: 1.25rem;
+      color: #2d2d2d; }
+    .servicesCards .servicesContact button {
+      margin-top: 1.2rem;
+      border: 3px solid #2d2d2d; }
+      .servicesCards .servicesContact button p {
+        color: #2d2d2d; }
+
+.testimonialsContainer {
+  background-color: #f5f5f5;
+  padding-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; }
+  .testimonialsContainer .testimonialsTitle h3 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem; }
+
+.slide-container {
+  padding: 1.5rem 0 3rem 0;
+  width: 100%; }
+  .slide-container .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .slide-container .swiper-slide .testimonialCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 260px;
+      height: 358px;
+      background: #fbfbfb;
+      box-shadow: 0px 16px 32px rgba(45, 45, 45, 0.25);
+      border-radius: 24px; }
+      .slide-container .swiper-slide .testimonialCard img {
+        width: 90px; }
+      .slide-container .swiper-slide .testimonialCard h4 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.25rem; }
+      .slide-container .swiper-slide .testimonialCard p {
+        width: 86%;
+        text-align: center;
+        margin-bottom: 0.3rem;
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1.4rem; }
+  .slide-container .swiper-button-prev {
+    position: absolute;
+    left: 8%; }
+    .slide-container .swiper-button-prev img {
+      width: 2rem; }
+  .slide-container .swiper-button-next {
+    position: absolute;
+    right: 8%; }
+    .slide-container .swiper-button-next img {
+      width: 2rem; }
+  .slide-container .swiper-button-next::after,
+  .slide-container .swiper-button-prev::after {
+    content: ''; }
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem; }
+
+.contactTitle {
+  margin-top: 2rem; }
+  .contactTitle h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem; }
+
+.socialMedia ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 2rem; }
+  .socialMedia ul img {
+    width: 50px; }
+
+.contactText {
+  margin-top: 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem; }
+  .contactText p {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    text-align: center; }
+
+.contactImg {
+  margin: 1.5rem 0; }
+  .contactImg img {
+    width: 217px; }
+
+.footerContainer {
+  padding-bottom: 2rem; }
+
+.footerContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly; }
+  .footerContact div {
+    height: 11.5rem; }
+  .footerContact h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-bottom: 1rem; }
+  .footerContact p,
+  .footerContact li {
+    font-size: 0.9rem;
+    line-height: 1.5rem; }
+  .footerContact .footerMail {
+    width: fit-content;
+    height: fit-content; }
+
+.footerLine {
+  margin-top: 2rem;
+  width: 100vw;
+  height: fit-content;
+  border: 1px solid rgba(45, 45, 45, 0.2); }
+
+.footerCopyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem; }
+  .footerCopyright p {
+    font-weight: 500;
+    font-size: 1.1rem; }

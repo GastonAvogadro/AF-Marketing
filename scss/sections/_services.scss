@@ -1,0 +1,115 @@
+.servicesContainer {
+    margin-top: 1rem;
+}
+
+.servicesTitle {
+    margin-bottom: 1.5rem;
+    h2 {
+        @include d-flex-center;
+        font-size: 2.5rem;
+    }
+}
+
+.servicesCards {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 87%, rgb(207, 182, 100) 100%);
+    @include d-flex-center;
+    @include d-flex-column;
+
+    .servicesCards1-title {
+        width: 75%;
+        margin-bottom: 1rem;
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+            text-align: center;
+        }
+    }
+    .serviceCard1 {
+        @include d-flex-center;
+        @include d-flex-column;
+
+        padding: 0 1rem;
+        margin-bottom: 1.5rem;
+        width: 278px;
+        height: 532px;
+        background: #fbfbfb;
+        box-shadow: 0px 16px 32px rgba(45, 45, 45, 0.25);
+        border-radius: 24px;
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+            text-align: center;
+        }
+        ul {
+            width: 80%;
+            li {
+                margin: 1.3rem 0;
+                display: flex;
+                span {
+                    position: relative;
+                    top: 12px;
+                    right: 11px;
+                    height: 4px;
+                    width: 4px;
+                    min-width: 4px;
+                    background-color: #2d2d2d;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        button {
+            width: 204px;
+            height: 55px;
+            margin-top: 1rem;
+            @include d-flex-center;
+            p {
+                font-weight: 500;
+                font-size: 1rem;
+            }
+        }
+    }
+    .servicesCards2-title {
+        @extend .servicesCards1-title;
+        margin: 0.6rem 0 2rem 0;
+    }
+    .serviceCard2 {
+        @extend .serviceCard1;
+        justify-content: space-evenly;
+        div {
+            @include d-flex-column;
+            width: 95%;
+            p {
+                text-align: start;
+                margin-top: 1rem;
+            }
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+        }
+    }
+    .servicesContact {
+        @extend .aboutContact;
+        margin-top: 0.8rem;
+        .servicesContact-title {
+            @extend .aboutContact-title;
+            font-size: 1.25rem;
+            color: #2d2d2d;
+        }
+        button{
+            margin-top: 1.2rem;
+            border: 3px solid #2d2d2d;
+            p{
+                color:#2d2d2d;
+            }
+        }
+    }
+}

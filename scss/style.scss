@@ -4,7 +4,7 @@
     font-family: CenturyGhoticB;
     src: url(../fonts/CenturyGothicB.TTF);
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 // Styles
 
@@ -14,3 +14,6 @@
 @import './sections/_home.scss';
 @import './sections/_about.scss';
 @import './sections/_services.scss';
+@import './sections/_testimonials.scss';
+@import './sections/_contact.scss';
+@import './sections/_footer.scss';

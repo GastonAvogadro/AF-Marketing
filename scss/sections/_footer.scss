@@ -1,0 +1,46 @@
+.footerContainer {
+    padding-bottom: 2rem
+}
+
+.footerContact {
+    @include d-flex-center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+
+    div {
+        height: 11.5rem;
+    }
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    p,
+    li {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    .footerMail {
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+.footerLine {
+    margin-top: 2rem;
+    width: 100vw;
+    height: fit-content;
+    border: 1px solid rgba(45, 45, 45, 0.2);
+}
+
+.footerCopyright {
+    @include d-flex-center;
+    margin-top: 1rem;
+    p {
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+}

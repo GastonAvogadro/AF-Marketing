@@ -1,0 +1,43 @@
+.contactContainer {
+    @include d-flex-space;
+    @include d-flex-column;
+    margin-bottom: 1.5rem;
+}
+
+.contactTitle {
+    margin-top: 2rem;
+    h2 {
+        @include d-flex-center;
+        font-size: 1.8rem;
+    }
+}
+
+.socialMedia {
+    ul {
+        @include d-flex-center;
+        gap: 0.8rem;
+        margin-top: 2rem;
+        img {
+            width: 50px;
+        }
+    }
+}
+
+.contactText {
+    margin-top: 2rem;
+    width: 80%;
+    @include d-flex-column;
+    gap: 1.6rem;
+    p {
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+}
+
+.contactImg{
+    margin: 1.5rem 0;
+    img{
+        width: 217px;
+    }
+}

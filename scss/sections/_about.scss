@@ -2,7 +2,7 @@
     @include d-flex-space;
     @include d-flex-column;
     text-align: center;
-    margin: 5rem 0;
+    margin-top: 5rem;
 }
 
 .aboutTitle {
@@ -28,6 +28,84 @@
     margin: 0.5rem 0;
     img {
         width: 240px;
-        
+    }
+}
+
+// ABOUT SERVICES CARDS
+
+.aboutCards {
+    @include d-flex-center;
+    @include d-flex-column;
+    gap: 4rem;
+    //margin: 3rem 0;
+    margin-top: 3rem;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 75%, #afb9d9 85%);
+    width: 100%;
+}
+
+.aboutCards-title {
+    width: 70%;
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        text-align: center;
+    }
+}
+
+.about-card {
+    width: 230px;
+    height: 260px;
+    background: #fbfbfb;
+    box-shadow: 0px 16px 32px rgba(45, 45, 45, 0.25);
+    border-radius: 24px;
+    img {
+        width: 80px;
+        position: relative;
+        top: -15%;
+    }
+    div {
+        @include d-flex-center;
+        @include d-flex-column;
+        gap: 1.5rem;
+        position: relative;
+        bottom: 0.6rem;
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            width: 68%;
+            font-size: 1.25rem;
+            line-height: 1.8rem;
+        }
+    }
+}
+
+.aboutContact {
+    @include d-flex-center;
+    @include d-flex-column;
+    .aboutContact-title {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        color: $white-primary;
+        margin-bottom: 1.6rem;
+    }
+    button {
+        width: 223px;
+        height: 58px;
+        background: #afb9d9;
+        background: transparent;
+        border: 3px solid #f5f5f5;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        p {
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.8rem;
+            color: $white-primary;
+        }
     }
 }
