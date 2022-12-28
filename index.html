@@ -14,23 +14,25 @@
     <header class="headerContainer">
         <nav class="navbar">
             <div class="navbar-logo">
-                <img src="./assets/logo.svg">
+                <a href="#home">
+                    <img src="./assets/logo.svg">
+                </a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Inicio</a>
+                    <a href="#home" class="nav-link">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Acerca de</a>
+                    <a href="#about" class="nav-link">Acerca de</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Servicios</a>
+                    <a href="#services1" class="nav-link">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Testimonios</a>
+                    <a href="#testimonials" class="nav-link">Testimonios</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contacto</a>
+                    <a href="#contact" class="nav-link">Contacto</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -42,29 +44,34 @@
 
     </header>
     <main>
-        <section class="homeContainer">
-            <div class="homeTitle">
-                <h1>Dejemos tu
-                    huella en redes
-                    sociales
-                </h1>
+        <section class="homeContainer" id="home">
+            <div class="homeContainer-text">
+                <div class="homeTitle">
+                    <h1>Dejemos tu
+                        huella en redes
+                        sociales
+                    </h1>
+                </div>
+                <div class="homeText">
+                    <p>
+                        No se trata solo de tener muchos seguidores en las redes. Juntos buscaremos generar un tono de
+                        voz y
+                        una esencia adecuada que te ayude a conectar con potenciales clientes.
+                    </p>
+                </div>
+                <a href="#aboutCards">
+                    <button class="btn-violet">
+                        <p>Servicios</p>
+                    </button>
+                </a>
             </div>
-            <div class="homeText">
-                <p>
-                    No se trata solo de tener muchos seguidores en las redes. Juntos buscaremos generar un tono de voz y
-                    una esencia adecuada que te ayude a conectar con potenciales clientes.
-                </p>
-            </div>
-            <div>
-                <button class="btn-violet">
-                    <p>Servicios</p>
-                </button>
-            </div>
-            <div class="homeImg">
-                <img src="./assets/hero.png">
+            <div class="homeContainer-img">
+                <div class="homeImg">
+                    <img src="./assets/hero.png">
+                </div>
             </div>
         </section>
-        <section class="aboutContainer">
+        <section class="aboutContainer" id="about">
             <div class="aboutTitle">
                 <h2>Sobre mí</h2>
             </div>
@@ -82,7 +89,7 @@
             <div class="aboutImg">
                 <img src="./assets/about.png">
             </div>
-            <article class="aboutCards">
+            <article class="aboutCards" id="aboutCards">
                 <div class="aboutCards-title">
                     <h3>
                         ¿En qué te puedo ayudar?
@@ -95,9 +102,11 @@
                             Creación y gestión de Redes
                             Sociales
                         </h2>
-                        <button class="btn-blue-mobile">
-                            <p>Ver más</p>
-                        </button>
+                        <a href="#services1">
+                            <button class="btn-blue-mobile">
+                                <p>Ver más</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="about-card">
@@ -106,9 +115,11 @@
                         <h2>
                             Creación de contenido para redes sociales
                         </h2>
-                        <button class="btn-blue-mobile">
-                            <p>Ver más</p>
-                        </button>
+                        <a href="#services2">
+                            <button class="btn-blue-mobile">
+                                <p>Ver más</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="about-card">
@@ -118,9 +129,11 @@
                             Diseño de Identidad y
                             Piezas
                         </h2>
-                        <button class="btn-blue-mobile">
-                            <p>Ver más</p>
-                        </button>
+                        <a href="#services2">
+                            <button class="btn-blue-mobile">
+                                <p>Ver más</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="about-card">
@@ -129,22 +142,27 @@
                         <h2>
                             Impartir capacitaciones a grupos
                         </h2>
-                        <button class="btn-blue-mobile">
-                            <p>Ver más</p>
-                        </button>
+                        <a href="#services2">
+                            <button class="btn-blue-mobile">
+                                <p>Ver más</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="aboutContact">
-                    <p class="aboutContact-title">¿Querés conocer más?</p>
-                    <button>
-                        <p>
-                            Contáctame
-                        </p>
-                    </button>
+                    <p class="aboutContact-title">¿Querés conocer más?</p><a>
+                        <button>
+                            <a href="#contact">
+                                <p>
+                                    Contáctame
+                                </p>
+                            </a>
+                        </button>
+                    </a>
                 </div>
             </article>
         </section>
-        <section class="servicesContainer">
+        <section class="servicesContainer" id="services1">
             <div class="servicesTitle">
                 <h2>Servicios</h2>
             </div>
@@ -172,9 +190,11 @@
                             <p>Adaptar contenido para publicar.</p>
                         </li>
                     </ul>
-                    <button class="btn-violet">
-                        <p>Contactar</p>
-                    </button>
+                    <a href="#contact">
+                        <button class="btn-violet">
+                            <p>Contactar</p>
+                        </button>
+                    </a>
                 </div>
                 <div class="serviceCard1">
                     <h4>Medium</h4>
@@ -196,9 +216,11 @@
                             <p>Adaptar contenido para publicar.</p>
                         </li>
                     </ul>
-                    <button class="btn-violet">
-                        <p>Contactar</p>
-                    </button>
+                    <a href="#contact">
+                        <button class="btn-violet">
+                            <p>Contactar</p>
+                        </button>
+                    </a>
                 </div>
                 <div class="serviceCard1">
                     <h4>Full</h4>
@@ -220,11 +242,13 @@
                             <p>Adaptar contenido para publicar.</p>
                         </li>
                     </ul>
-                    <button class="btn-violet">
-                        <p>Contactar</p>
-                    </button>
+                    <a href="#contact">
+                        <button class="btn-violet">
+                            <p>Contactar</p>
+                        </button>
+                    </a>
                 </div>
-                <div class="servicesCards2-title">
+                <div class="servicesCards2-title" id="services2">
                     <h3>Servicios adicionales</h3>
                 </div>
                 <div class="serviceCard2">
@@ -243,9 +267,11 @@
                             <p>1 video para reels</p>
                         </li>
                     </ul>
-                    <button class="btn-violet">
-                        <p>Contactar</p>
-                    </button>
+                    <a href="#contact">
+                        <button class="btn-violet">
+                            <p>Contactar</p>
+                        </button>
+                    </a>
                 </div>
                 <div class="serviceCard2">
                     <h4>Diseño</h4>
@@ -274,9 +300,11 @@
                             <p>Plantillas.</p>
                         </li>
                     </ul>
-                    <button class="btn-violet">
-                        <p>Contactar</p>
-                    </button>
+                    <a href="#contact">
+                        <button class="btn-violet">
+                            <p>Contactar</p>
+                        </button>
+                    </a>
                 </div>
                 <div class="serviceCard2">
                     <h4>Capacitación</h4>
@@ -294,23 +322,27 @@
                             <p>Fotografía.</p>
                         </li>
                     </ul>
-                    <button class="btn-violet">
-                        <p>Contactar</p>
-                    </button>
+                    <a href="#contact">
+                        <button class="btn-violet">
+                            <p>Contactar</p>
+                        </button>
+                    </a>
                 </div>
                 <div class="servicesContact">
                     <p class="servicesContact-title">¿Querés personalizar tu plan?</p>
                     <p>Armemos la mejor estrategia juntos.</p>
-                    <button>
-                        <p>
-                            Contáctame
-                        </p>
-                    </button>
+                    <a href="#contact">
+                        <button>
+                            <p>
+                                Contáctame
+                            </p>
+                        </button>
+                    </a>
                 </div>
             </article>
 
         </section>
-        <section class="testimonialsContainer">
+        <section class="testimonialsContainer" id="testimonials">
             <div class="testimonialsTitle">
                 <h3>Opiniones de clientes</h3>
             </div>
@@ -350,16 +382,19 @@
                 <div class="swiper-button-prev swiper-navBtn"><img src="./assets/arrow-left.png"></div>
             </div>
         </section>
-        <section class="contactContainer">
+        <section class="contactContainer" id="contact">
             <div class="contactTitle">
                 <h2>Contáctame</h2>
             </div>
             <div class="socialMedia">
                 <ul>
-                    <li><a><img src="./assets/linkedin-icon.png"></a></li>
-                    <li><a><img src="./assets/facebook-icon.png"></a></li>
-                    <li><a><img src="./assets/instagram-icon.png"></a></li>
-                    <li><a><img src="./assets/behance-icon.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/felicitas-aranda-638570193/"><img
+                                src="./assets/linkedin-icon.png"></a></li>
+                    <li><a href="https://www.facebook.com/afmarketingenredes"><img src="./assets/facebook-icon.png"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/soyfeliaranda/"><img src="./assets/instagram-icon.png"></a>
+                    </li>
+                    <li><a href="https://www.behance.net/feliaranda"><img src="./assets/behance-icon.png"></a></li>
                 </ul>
             </div>
             <div class="contactText">
@@ -377,20 +412,20 @@
             <div class="footerLinks">
                 <h5>Links rápidos</h5>
                 <ul>
-                    <li><a>Inicio</a></li>
-                    <li><a>Acerca de</a></li>
-                    <li><a>Servicios</a></li>
-                    <li><a>Testimonios</a></li>
-                    <li><a>Contacto</a></li>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#services1">Servicios</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
             <div class="footerSocialMedia">
                 <h5>Social</h5>
                 <ul>
-                    <li><a>Instagram</a></li>
-                    <li><a>Facebook</a></li>
-                    <li><a>Linkedin</a></li>
-                    <li><a>Behance</a></li>
+                    <li><a href="https://www.instagram.com/soyfeliaranda/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/afmarketingenredes">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/felicitas-aranda-638570193/">Linkedin</a></li>
+                    <li><a href="https://www.behance.net/feliaranda">Behance</a></li>
                 </ul>
             </div>
             <div class="footerMail">

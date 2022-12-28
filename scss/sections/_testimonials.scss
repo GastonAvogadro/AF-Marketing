@@ -3,6 +3,7 @@
     padding-top: 2.5rem;
     @include d-flex-center;
     @include d-flex-column;
+    scroll-margin-top: 3rem;
     .testimonialsTitle {
         h3 {
             font-family: 'Poppins', sans-serif;

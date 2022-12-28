@@ -1,5 +1,6 @@
 .servicesContainer {
     margin-top: 1rem;
+    scroll-margin-top: 5rem;
 }
 
 .servicesTitle {
@@ -79,6 +80,7 @@
     .servicesCards2-title {
         @extend .servicesCards1-title;
         margin: 0.6rem 0 2rem 0;
+        scroll-margin-top: 5rem;
     }
     .serviceCard2 {
         @extend .serviceCard1;

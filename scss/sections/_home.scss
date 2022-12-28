@@ -2,15 +2,21 @@
     @include d-flex-space;
     @include d-flex-column;
     text-align: center;
-    margin: 2.5rem 0;
+    margin-bottom: 0;
+    padding-top: 6.5rem;
+}
+
+.homeContainer-text{
+    @include d-flex-center;
+    @include d-flex-column;
 }
 
 .homeTitle {
     width: 90%;
     @include d-flex-center;
     h1 {
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: calc(2.3rem + 0.8vw);
+        line-height: calc(2.8rem + 0.8vw);
         white-space: pre-line;
     }
 }
@@ -19,8 +25,8 @@
     margin: 2.5rem 0;
     width: 92%;
     p {
-        line-height: 2.2rem;
-        font-size: 1.25rem;
+        font-size: calc(1.05rem + 0.8vw);
+        line-height: calc(2rem + 0.8vw);
     }
 }
 
@@ -28,5 +34,41 @@
     margin-top: 2.5rem;
     img {
         width: 257px;
+    }
+}
+
+@media (min-width: 450px) {
+    .homeText{
+        width: 75%;
+    }
+}
+
+@media (min-width: 650px) {
+    .homeTitle{
+        width: 60%;
+        h1{
+            white-space:initial;
+        }
+    }
+    .homeText{
+        width: 65%;
+    }
+}
+
+@media (min-width: 780px) {
+    .homeText{
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .homeContainer{
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: start;
+        .homeContainer-text{
+            @include d-flex-column;
+            align-items: flex-start;
+        }
     }
 }
