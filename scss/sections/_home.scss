@@ -25,8 +25,8 @@
     width: 90%;
     @include d-flex-center;
     h1 {
-        font-size: calc(2.3rem + 0.8vw);
-        line-height: calc(2.8rem + 0.8vw);
+        font-size: calc(2.4rem + 0.3vw);
+        line-height: calc(2.9rem + 0.3vw);
         white-space: pre-line;
     }
 }
@@ -35,8 +35,8 @@
     margin: 2.5rem 0;
     width: 92%;
     p {
-        font-size: calc(1.05rem + 0.8vw);
-        line-height: calc(2rem + 0.8vw);
+        font-size: calc(1.15rem + 0.3vw);
+        line-height: calc(2.1rem + 0.3vw);
     }
 }
 

@@ -155,19 +155,15 @@ h6 {
 
 @media (min-width: 1000px) {
   .navbar-logo {
-    left: 8%; }
-  .nav-menu a {
-    font-size: 1.25rem; } }
+    left: 11%; } }
 
 @media (min-width: 1200px) {
   .navbar-logo {
-    left: 12%; }
-  .nav-menu a {
-    font-size: 1.4rem; } }
+    left: 16%; } }
 
 @media (min-width: 1400px) {
   .navbar-logo {
-    left: 16%; } }
+    left: 20%; } }
 
 .homeContainer {
   display: flex;
@@ -200,16 +196,16 @@ h6 {
   align-items: center;
   justify-content: center; }
   .homeTitle h1 {
-    font-size: calc(2.3rem + 0.8vw);
-    line-height: calc(2.8rem + 0.8vw);
+    font-size: calc(2.4rem + 0.3vw);
+    line-height: calc(2.9rem + 0.3vw);
     white-space: pre-line; }
 
 .homeText {
   margin: 2.5rem 0;
   width: 92%; }
   .homeText p {
-    font-size: calc(1.05rem + 0.8vw);
-    line-height: calc(2rem + 0.8vw); }
+    font-size: calc(1.15rem + 0.3vw);
+    line-height: calc(2.1rem + 0.3vw); }
 
 @media (min-width: 450px) {
   .homeText {
