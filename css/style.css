@@ -379,7 +379,8 @@ h6 {
     background: linear-gradient(180deg, white 60%, #afb9d9 80%); }
     .aboutCardsContainer .aboutCards {
       gap: 1rem; }
-    .aboutCardsContainer .aboutCards:nth-child(1), .aboutCardsContainer .aboutCards:nth-child(2) {
+    .aboutCardsContainer .aboutCards:nth-child(1),
+    .aboutCardsContainer .aboutCards:nth-child(2) {
       row-gap: 4rem; } }
 
 @media (min-width: 650px) {
@@ -448,6 +449,7 @@ h6 {
     .servicesCards .servicesCards1-title h3, .servicesCards .servicesCards2-title h3 {
       font-family: 'Poppins', sans-serif;
       font-size: 1.5rem;
+      font-size: calc(1.2rem + 0.8vw);
       line-height: 2.3rem;
       text-align: center; }
   .servicesCards .serviceCards1-container, .servicesCards .serviceCards2-container {
@@ -521,6 +523,7 @@ h6 {
     margin-top: 0.8rem; }
     .servicesCards .servicesContact .servicesContact-title {
       font-size: 1.25rem;
+      font-size: calc(1.05rem + 0.8vw);
       color: #2d2d2d; }
     .servicesCards .servicesContact button {
       margin-top: 1.2rem;
@@ -642,28 +645,43 @@ h6 {
     width: 217px; }
 
 .footerContainer {
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  background: #F5F5F5; }
 
-.footerContact {
+.footerContact .footerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 1.8rem 0; }
+  .footerContact .footerLogo img {
+    margin-bottom: 1.2rem;
+    width: 36%;
+    max-width: 263px; }
+  .footerContact .footerLogo p {
+    margin-top: 0.2rem; }
+
+.footerContact .footerLinks {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   justify-content: space-evenly; }
-  .footerContact div {
+  .footerContact .footerLinks div {
     height: 11.5rem; }
-  .footerContact h5 {
+  .footerContact .footerLinks h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
     line-height: 1.2rem;
     margin-bottom: 1rem; }
-  .footerContact p,
-  .footerContact li {
+  .footerContact .footerLinks p,
+  .footerContact .footerLinks li {
     font-size: 0.9rem;
     line-height: 1.5rem; }
-  .footerContact .footerMail {
+  .footerContact .footerLinks .footerMail {
     width: fit-content;
     height: fit-content; }
 

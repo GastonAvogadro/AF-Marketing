@@ -1,31 +1,46 @@
 .footerContainer {
-    padding-bottom: 2rem
+    padding-bottom: 2rem;
+    background: #F5F5F5;
 }
 
 .footerContact {
-    @include d-flex-center;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-evenly;
-
-    div {
-        height: 11.5rem;
+    .footerLogo {
+        @include d-flex-center;
+        @include d-flex-column;
+        padding: 3rem 0 1.8rem 0;
+        img{
+            margin-bottom: 1.2rem;
+            width: 36%;
+            max-width: 263px;
+        }
+        p{
+            margin-top: 0.2rem;
+        }
     }
-    h5 {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 0.9rem;
-        line-height: 1.2rem;
-        margin-bottom: 1rem;
-    }
-    p,
-    li {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
-    }
-    .footerMail {
-        width: fit-content;
-        height: fit-content;
+    .footerLinks {
+        @include d-flex-center;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
+        div {
+            height: 11.5rem;
+        }
+        h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        p,
+        li {
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+        }
+        .footerMail {
+            width: fit-content;
+            height: fit-content;
+        }
     }
 }
 

@@ -49,7 +49,7 @@
     width: 100%;
 }
 
-.aboutCards{
+.aboutCards {
     @include d-flex-center;
     flex-wrap: wrap;
     gap: 5rem;
@@ -133,12 +133,13 @@
 }
 
 @media (min-width: 540px) {
-    .aboutCardsContainer{
+    .aboutCardsContainer {
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 60%, #afb9d9 80%);
         .aboutCards {
             gap: 1rem;
         }
-        .aboutCards:nth-child(1), .aboutCards:nth-child(2){
+        .aboutCards:nth-child(1),
+        .aboutCards:nth-child(2) {
             row-gap: 4rem;
         }
     }
@@ -161,7 +162,7 @@
 }
 
 @media (min-width: 968px) {
-    .aboutCardsContainer{
+    .aboutCardsContainer {
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, #afb9d9 90%);
     }
 }
@@ -195,7 +196,7 @@
 @media (min-width: 1160px) {
     .aboutDescription {
         margin-left: 6rem;
-        .aboutContainer-img{
+        .aboutContainer-img {
             .aboutImg {
                 margin-right: 5rem;
             }
