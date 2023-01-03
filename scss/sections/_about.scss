@@ -6,43 +6,54 @@
     scroll-margin-top: 5rem;
 }
 
-.aboutTitle {
-    h2 {
-        @include d-flex-center;
-        font-size: calc(2.3rem + 0.8vw);
+.aboutContainer-text {
+    @include d-flex-center;
+    @include d-flex-column;
+    .aboutTitle {
+        h2 {
+            @include d-flex-center;
+            font-size: calc(2.3rem + 0.8vw);
+        }
     }
-}
-
-.aboutText {
-    margin: 1.5rem 0;
-    width: 92%;
-    p {
-        font-size: calc(0.92rem + 0.8vw);
-        line-height: calc(2rem + 0.8vw);
-    }
-    p:last-child {
-        margin-top: 2rem;
+    .aboutText {
+        margin: 1.5rem 0;
+        width: 92%;
+        p {
+            font-size: calc(0.92rem + 0.8vw);
+            line-height: calc(2rem + 0.8vw);
+        }
+        p:last-child {
+            margin-top: 2rem;
+        }
     }
 }
 
 .aboutImg {
     margin: 0.5rem 0;
     img {
-        width: 240px;
+        width: 70%;
+        max-width: 400px;
     }
 }
 
 // ABOUT SERVICES CARDS
 
-.aboutCards {
+.aboutCardsContainer {
     @include d-flex-center;
     @include d-flex-column;
     gap: 4rem;
-    scroll-margin-top: 5rem;
     margin-top: 3rem;
+    scroll-margin-top: 5rem;
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 75%, #afb9d9 85%);
     width: 100%;
+}
+
+.aboutCards{
+    @include d-flex-center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 1rem;
 }
 
 .aboutCards-title {
@@ -107,6 +118,87 @@
             font-size: 1.25rem;
             line-height: 1.8rem;
             color: $white-primary;
+        }
+    }
+}
+
+// MEDIA QUERIES
+
+@media (min-width: 450px) {
+    .aboutContainer-text {
+        .aboutText {
+            width: 75%;
+        }
+    }
+}
+
+@media (min-width: 540px) {
+    .aboutCardsContainer{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 60%, #afb9d9 80%);
+        .aboutCards {
+            gap: 1rem;
+        }
+        .aboutCards:nth-child(1), .aboutCards:nth-child(2){
+            row-gap: 4rem;
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .aboutContainer-text {
+        .aboutText {
+            width: 65%;
+        }
+    }
+}
+
+@media (min-width: 780px) {
+    .aboutContainer-text {
+        .aboutText {
+            width: 60%;
+        }
+    }
+}
+
+@media (min-width: 968px) {
+    .aboutCardsContainer{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, #afb9d9 90%);
+    }
+}
+
+@media (min-width: 1024px) {
+    .aboutDescription {
+        @include d-flex-center;
+        justify-content: space-between;
+        margin-left: 4rem;
+        padding-top: 2rem;
+        .aboutContainer-text {
+            text-align: start;
+            align-items: flex-start;
+            width: 52%;
+            .aboutText {
+                width: 100%;
+            }
+        }
+        .aboutContainer-img {
+            width: 45%;
+            .aboutImg {
+                margin-right: 4rem;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1160px) {
+    .aboutDescription {
+        margin-left: 6rem;
+        .aboutContainer-img{
+            .aboutImg {
+                margin-right: 5rem;
+            }
         }
     }
 }
