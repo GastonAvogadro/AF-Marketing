@@ -9,7 +9,7 @@
     margin-top: 2rem;
     h2 {
         @include d-flex-center;
-        font-size: 1.8rem;
+        font-size: calc(1.7rem + 0.3vw);
     }
 }
 
@@ -24,21 +24,42 @@
     }
 }
 
-.contactText {
-    margin-top: 2rem;
-    width: 80%;
+.contactSection{
+    @include d-flex-center;
     @include d-flex-column;
-    gap: 1.6rem;
-    p {
-        font-size: 1.25rem;
-        line-height: 1.8rem;
-        text-align: center;
+    .contactText {
+        margin-top: 2rem;
+        width: 80%;
+        @include d-flex-column;
+        gap: 1.6rem;
+        p {
+            font-size: calc(1.05rem + 0.3vw);
+            line-height: 1.8rem;
+            text-align: center;
+        }
     }
 }
 
 .contactImg{
+    @include d-flex-center;
     margin: 1.5rem 0;
     img{
         width: 217px;
+        width: 64%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contactContainer{
+        flex-direction: row;
+        .contactSection{
+            align-items: flex-start;
+            margin-left: 6%;
+        }
+        .contactText{
+            p{
+                text-align: left;
+            }
+        }
     }
 }

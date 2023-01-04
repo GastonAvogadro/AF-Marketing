@@ -9,7 +9,7 @@
             font-family: 'Poppins', sans-serif;
             text-align: center;
             font-weight: 500;
-            font-size: 1.5rem;
+            font-size: calc(1.3rem + 0.3vw);
         }
     }
 }
@@ -41,7 +41,7 @@
                 text-align: center;
                 margin-bottom: 0.3rem;
                 font-weight: 300;
-                font-size: 0.9rem;
+                font-size: calc(0.85rem + 0.15vw);
                 line-height: 1.4rem;
             }
         }

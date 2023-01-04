@@ -11,7 +11,7 @@
         img{
             margin-bottom: 1.2rem;
             width: 36%;
-            max-width: 263px;
+            max-width: 223px;
         }
         p{
             margin-top: 0.2rem;
@@ -22,6 +22,9 @@
         flex-wrap: wrap;
         text-align: center;
         justify-content: space-evenly;
+        gap: 2rem;
+        row-gap: 0;
+        padding: 0rem 0.8rem;
         div {
             height: 11.5rem;
         }
@@ -40,6 +43,9 @@
         .footerMail {
             width: fit-content;
             height: fit-content;
+            p{
+                font-size: 0.8rem;
+            }
         }
     }
 }
@@ -57,5 +63,66 @@
     p {
         font-weight: 500;
         font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 471.5px) {
+    .footerContact{
+        .footerLinks{
+            align-items: flex-start;
+            .footerMail{
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .footerContact{
+        .footerLinks{
+            gap: 0;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .footerContact{
+        @include d-flex-center;
+        padding-top: 2.5rem;
+        .footerLogo{
+            align-items: flex-start;
+            padding: 0;
+            img{
+                width: 80%;
+            } 
+        }
+        .footerLinks{
+            width: 65%;
+            h5 {
+                font-size: 1.1rem;
+            }
+            p,
+            li {
+                font-size: 1rem;
+            }
+            .footerMail{
+                height: 100%;
+                text-align: start;
+
+            }
+            .footerMenu, .footerSocialMedia{
+                ul{
+                    @include d-flex-column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                }
+                h5{
+                    width: fit-content;
+                    text-align: start;
+                }
+            }
+        }
     }
 }

@@ -19,21 +19,28 @@ document.querySelectorAll('.nav-link').forEach((n) =>
 
 const swiper = new Swiper('.slide-content', {
     spaceBetween: 25,
-    loop: true,
+    loop: false,
     centerSlide: 'true',
     fade: 'true',
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
+    slidesPerView: 1,
     breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        
-        850: {
+        990: {
             slidesPerView: 3,
+            spaceBetween: -100,
+        },
+
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: -240,
+        },
+
+        1400: {
+            slidesPerView: 3,
+            spaceBetween: -540,
         },
     },
 });

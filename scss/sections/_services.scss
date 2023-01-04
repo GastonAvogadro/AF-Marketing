@@ -7,8 +7,7 @@
     margin-bottom: 1.5rem;
     h2 {
         @include d-flex-center;
-        font-size: 2.5rem;
-        font-size: calc(2.3rem + 0.8vw);
+        font-size: calc(2.3rem + 0.3vw);
     }
 }
 
@@ -23,8 +22,7 @@
         margin-bottom: 1rem;
         h3 {
             font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
-            font-size: calc(1.2rem + 0.8vw);
+            font-size: calc(1.3rem + 0.3vw);
             line-height: 2.3rem;
             text-align: center;
         }
@@ -35,10 +33,12 @@
         .serviceCard1 {
             @include d-flex-center;
             @include d-flex-column;
+            justify-content: space-between;
             margin: 0 1rem;
             padding: 0 1rem;
             margin-bottom: 1.5rem;
             width: 278px;
+            width: calc(278px + 2vw);
             height: 532px;
             background: #fbfbfb;
             box-shadow: 0px 16px 32px rgba(45, 45, 45, 0.25);
@@ -46,9 +46,10 @@
             h4 {
                 font-family: 'Poppins', sans-serif;
                 font-weight: 500;
-                font-size: 1.5rem;
+                font-size: calc(1.3rem + 0.3vw);
                 line-height: 2.3rem;
                 text-align: center;
+                margin-top: 2rem;
             }
             ul {
                 width: 80%;
@@ -68,13 +69,14 @@
                     }
                     p {
                         font-size: 1.1rem;
+                        font-size: calc(0.9rem + 0.3vw);
                     }
                 }
             }
             button {
                 width: 204px;
                 height: 55px;
-                margin-top: 1rem;
+                margin-bottom: 3rem;
                 @include d-flex-center;
                 p {
                     font-weight: 500;
@@ -92,7 +94,6 @@
         @extend .serviceCards1-container;
         .serviceCard2 {
             @extend .serviceCard1;
-            justify-content: space-evenly;
             div {
                 @include d-flex-column;
                 width: 95%;
@@ -103,8 +104,10 @@
             }
             p {
                 font-size: 1.1rem;
+                font-size: calc(0.9rem + 0.3vw);
                 line-height: 1.6rem;
             }
+            
         }
     }
     .servicesContact {
@@ -115,6 +118,9 @@
             font-size: 1.25rem;
             font-size: calc(1.05rem + 0.8vw);
             color: #2d2d2d;
+        }
+        p:nth-child(2){
+            font-size: calc(0.9rem + 0.3vw);
         }
         button {
             margin-top: 1.2rem;
@@ -144,6 +150,21 @@
         }
         .servicesCards2-title{
             margin-top: 2rem;
+        }
+    }
+}
+
+@media (min-width: 990px) {
+    .servicesTitle {
+        margin-top: 3rem;
+    }
+    .servicesCards{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 75%, rgb(207, 182, 100) 95%);
+        .servicesCards2-title{
+            margin-top: 3rem;
+        }
+        .servicesContact{
+            margin-top: 3rem;
         }
     }
 }
