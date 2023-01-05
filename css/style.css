@@ -434,6 +434,10 @@ h6 {
     .aboutDescription .aboutContainer-img .aboutImg {
       margin-right: 5rem; } }
 
+@media (min-width: 1242px) {
+  .aboutDescription .aboutContainer-text .aboutText {
+    width: 85%; } }
+
 .servicesContainer {
   margin-top: 1rem;
   scroll-margin-top: 5rem; }
@@ -527,11 +531,16 @@ h6 {
     width: 95%; }
     .servicesCards .serviceCards2-container .serviceCard2 div p {
       text-align: start;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      margin-left: 0.4rem; }
+  .servicesCards .serviceCards2-container .serviceCard2 ul {
+    margin-bottom: 2rem; }
   .servicesCards .serviceCards2-container .serviceCard2 p {
     font-size: 1.1rem;
     font-size: calc(0.9rem + 0.3vw);
     line-height: 1.6rem; }
+  .servicesCards .serviceCards2-container .serviceCard2:nth-child(2) h4 {
+    margin-bottom: 1.5rem; }
   .servicesCards .servicesContact {
     margin-top: 0.8rem; }
     .servicesCards .servicesContact .servicesContact-title {

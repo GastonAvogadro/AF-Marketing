@@ -100,14 +100,22 @@
                 p {
                     text-align: start;
                     margin-top: 1rem;
+                    margin-left: 0.4rem;
                 }
+            }
+            ul {
+                margin-bottom: 2rem;
             }
             p {
                 font-size: 1.1rem;
                 font-size: calc(0.9rem + 0.3vw);
                 line-height: 1.6rem;
             }
-            
+        }
+        .serviceCard2:nth-child(2) {
+            h4 {
+                margin-bottom: 1.5rem
+            }
         }
     }
     .servicesContact {
@@ -119,7 +127,7 @@
             font-size: calc(1.05rem + 0.8vw);
             color: #2d2d2d;
         }
-        p:nth-child(2){
+        p:nth-child(2) {
             font-size: calc(0.9rem + 0.3vw);
         }
         button {
@@ -148,7 +156,7 @@
                 margin: 0 1rem;
             }
         }
-        .servicesCards2-title{
+        .servicesCards2-title {
             margin-top: 2rem;
         }
     }
@@ -158,12 +166,12 @@
     .servicesTitle {
         margin-top: 3rem;
     }
-    .servicesCards{
+    .servicesCards {
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 75%, rgb(207, 182, 100) 95%);
-        .servicesCards2-title{
+        .servicesCards2-title {
             margin-top: 3rem;
         }
-        .servicesContact{
+        .servicesContact {
             margin-top: 3rem;
         }
     }
