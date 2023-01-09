@@ -73,10 +73,12 @@
                     }
                 }
             }
+            a {
+                margin-bottom: 3rem;
+            }
             button {
                 width: 204px;
                 height: 55px;
-                margin-bottom: 3rem;
                 @include d-flex-center;
                 p {
                     font-weight: 500;
@@ -114,7 +116,7 @@
         }
         .serviceCard2:nth-child(2) {
             h4 {
-                margin-bottom: 1.5rem
+                margin-bottom: 1.5rem;
             }
         }
     }
@@ -130,8 +132,11 @@
         p:nth-child(2) {
             font-size: calc(0.9rem + 0.3vw);
         }
+        a {
+            margin: 1.2rem 0 2rem 0;
+        }
         button {
-            margin-top: 1.2rem;
+            margin-bottom: 0;
             border: 3px solid #2d2d2d;
             p {
                 color: #2d2d2d;

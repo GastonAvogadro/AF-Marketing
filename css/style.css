@@ -525,10 +525,11 @@ h6 {
           .servicesCards .serviceCards1-container .serviceCard1 ul li p, .servicesCards .serviceCards2-container .serviceCard1 ul li p, .servicesCards .serviceCards2-container .serviceCard2 ul li p {
             font-size: 1.1rem;
             font-size: calc(0.9rem + 0.3vw); }
+      .servicesCards .serviceCards1-container .serviceCard1 a, .servicesCards .serviceCards2-container .serviceCard1 a, .servicesCards .serviceCards2-container .serviceCard2 a {
+        margin-bottom: 3rem; }
       .servicesCards .serviceCards1-container .serviceCard1 button, .servicesCards .serviceCards2-container .serviceCard1 button, .servicesCards .serviceCards2-container .serviceCard2 button {
         width: 204px;
         height: 55px;
-        margin-bottom: 3rem;
         display: flex;
         align-items: center;
         justify-content: center; }
@@ -562,8 +563,10 @@ h6 {
       color: #2d2d2d; }
     .servicesCards .servicesContact p:nth-child(2) {
       font-size: calc(0.9rem + 0.3vw); }
+    .servicesCards .servicesContact a {
+      margin: 1.2rem 0 2rem 0; }
     .servicesCards .servicesContact button {
-      margin-top: 1.2rem;
+      margin-bottom: 0;
       border: 3px solid #2d2d2d; }
       .servicesCards .servicesContact button p {
         color: #2d2d2d; }
