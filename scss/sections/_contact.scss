@@ -62,4 +62,12 @@
             }
         }
     }
+    .socialMedia {
+        ul {
+            img:hover {
+                opacity: 75%;
+                transition: ease .4s;
+            }
+        }
+    }
 }

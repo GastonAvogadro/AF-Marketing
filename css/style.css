@@ -65,6 +65,14 @@ h6 {
     font-weight: 700;
     font-size: 0.9rem; }
 
+@media (min-width: 1024px) {
+  .btn-blue:hover, .btn-blue-mobile:hover,
+  .btn-violet:hover,
+  .btn-blue:hover,
+  .btn-blue-mobile:hover {
+    opacity: 75%;
+    transition: ease .4s; } }
+
 .headerContainer {
   box-shadow: 0 4px 2px -2px #cacaca;
   width: 100%;
@@ -156,6 +164,11 @@ h6 {
 @media (min-width: 1000px) {
   .navbar-logo {
     left: 11%; } }
+
+@media (min-width: 1024px) {
+  .nav-menu a:hover {
+    opacity: 75%;
+    transition: ease .4s; } }
 
 @media (min-width: 1200px) {
   .navbar-logo {
@@ -636,6 +649,18 @@ h6 {
   .slide-container .swiper-button-prev::after {
     content: ''; }
 
+@media (min-width: 600px) {
+  .swiper-button-next {
+    margin-right: 5rem; }
+  .swiper-button-prev {
+    margin-left: 5rem; } }
+
+@media (min-width: 830px) {
+  .swiper-button-next {
+    margin-right: 9rem; }
+  .swiper-button-prev {
+    margin-left: 9rem; } }
+
 .contactContainer {
   display: flex;
   align-items: center;
@@ -695,7 +720,10 @@ h6 {
       align-items: flex-start;
       margin-left: 6%; }
     .contactContainer .contactText p {
-      text-align: left; } }
+      text-align: left; }
+  .socialMedia ul img:hover {
+    opacity: 75%;
+    transition: ease .4s; } }
 
 .footerContainer {
   padding-bottom: 2rem;
@@ -781,6 +809,9 @@ h6 {
         width: 80%; }
     .footerContact .footerLinks {
       width: 65%; }
+      .footerContact .footerLinks a:hover {
+        opacity: 75%;
+        transition: ease .4s; }
       .footerContact .footerLinks h5 {
         font-size: 1.1rem; }
       .footerContact .footerLinks p,

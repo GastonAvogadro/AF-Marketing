@@ -77,3 +77,11 @@ h6 {
         font-size: 0.9rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .btn-blue:hover,
+    .btn-violet:hover {
+        opacity: 75%;
+        transition: ease .4s;
+    }
+}

@@ -112,6 +112,13 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .nav-menu a:hover {
+        opacity: 75%;
+        transition: ease .4s;
+    }
+}
+
 @media (min-width: 1200px) {
     .navbar-logo {
         left: 16%;
