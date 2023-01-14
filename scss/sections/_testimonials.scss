@@ -24,23 +24,25 @@
             justify-content: space-evenly;
             align-items: center;
             width: 260px;
-            height: 358px;
-            background: #fbfbfb;
+            height: 350px;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(186, 223, 231, 1) 60%,
+                rgba(164, 211, 221, 1) 100%
+            );
             box-shadow: 0px 16px 32px rgba(45, 45, 45, 0.25);
             border-radius: 24px;
-            img {
-                width: 90px;
-            }
             h4 {
                 font-family: 'Poppins', sans-serif;
-                font-weight: 400;
+                font-weight: 500;
                 font-size: 1.25rem;
             }
             p {
                 width: 86%;
                 text-align: center;
                 margin-bottom: 0.3rem;
-                font-weight: 300;
                 font-size: calc(0.85rem + 0.15vw);
                 line-height: 1.4rem;
             }

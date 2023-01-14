@@ -621,21 +621,19 @@ h6 {
       justify-content: space-evenly;
       align-items: center;
       width: 260px;
-      height: 358px;
-      background: #fbfbfb;
+      height: 350px;
+      background: white;
+      background: linear-gradient(180deg, white 0%, #badfe7 60%, #a4d3dd 100%);
       box-shadow: 0px 16px 32px rgba(45, 45, 45, 0.25);
       border-radius: 24px; }
-      .slide-container .swiper-slide .testimonialCard img {
-        width: 90px; }
       .slide-container .swiper-slide .testimonialCard h4 {
         font-family: 'Poppins', sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1.25rem; }
       .slide-container .swiper-slide .testimonialCard p {
         width: 86%;
         text-align: center;
         margin-bottom: 0.3rem;
-        font-weight: 300;
         font-size: calc(0.85rem + 0.15vw);
         line-height: 1.4rem; }
   .slide-container .swiper-button-prev {
