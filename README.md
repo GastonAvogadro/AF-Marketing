@@ -1,9 +1,9 @@
 # Sitio web AF - Marketing
 
-Sitio desarrollado para una comunnity manager. Fui el encargado del desarrollo, trabajamos en equipo junto a Andrés (diseñador) y Solange (CM).
+Sitio web desarrollado para una comunnity manager. Fui el encargado del desarrollo, trabajamos en equipo junto a Andrés Lugo (diseñador UX/UI) y Solange Donati (CM).
 
 ### Link al sitio
-### https://gastonavogadro.github.io/AF-Marketing/
+### https://feliaranda.com.ar/
 
 ### Instalación
 
